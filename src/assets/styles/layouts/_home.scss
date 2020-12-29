@@ -1,0 +1,21 @@
+body {
+  font-family: $font-family-sans-serif;
+  color: $uoc-corporate;
+  background-color: $uoc-bg;
+  margin: 0;
+  padding: 30px;
+}
+
+.uoc-logo {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.uoc-title {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: $font-family-serif;
+  color: $uoc-corporate;
+}
