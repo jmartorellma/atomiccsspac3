@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         cyan: colors.cyan,
         dark: '#343a40',
-        primary: '#0f2e4e'
+        primary: '#0f2e4e',
+        interFoot: '#6b0000'
       },
       textColor: {
         'logo': '#ff0000'

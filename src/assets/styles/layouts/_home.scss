@@ -1,56 +1,27 @@
-.custom-card {
-  width: 100%;
+.card-mx-w {
   max-width: 18.75rem;
-  height: 100%;
-  max-height: 28.2rem;
-  margin: 2.5rem;
 }
 
-.custom-card-img {
+.card-mx-h {
+  max-height: 28.2rem;
+}
+
+.card-img {
   height: 45%;
 }
 
-.custom-card-img__figure {
-  height: 100%;
-  margin: 0;
-}
-
-.custom-card-img__img {
-  width: 100%;
-  height: 100%;
-}
-
-.custom-card-body {
-  display: flex;
+.card-body-h {
   height: 55%;
-  flex-direction: column;
 }
 
-.custom-card-body__title {
-  font-weight: bold;
-  font-family: $font-family-serif;
-  color: $color-primary;
-  text-align: center;
+.card-body-flex-b {
+  flex-basis: auto;
 }
 
-.custom-card-body__style {
-  font-weight: bold;
-  text-align: center;
-}
-
-.custom-card-body__p {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.custom-card-body__text {
-  font-size: $card-text-size;
-}
-
-.custom-card-body__data {
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-align: right;
+@layer components {
+  /* stylelint-disable max-line-length */
+  .card {
+    @apply relative flex flex-col min-w-0 bg-white bg-clip-border border-2 border-solid border-primary rounded-md w-full card-mx-w h-full card-mx-h m-10;
+  }
+  /* stylelint-enable max-line-length */
 }
