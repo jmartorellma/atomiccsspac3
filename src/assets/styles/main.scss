@@ -16,12 +16,16 @@
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 /**
  * Import layouts
  * It's a best practice to use a partial for each page
  */
 
+@import "layouts/general";
 @import "layouts/home";
+@import "layouts/information";
 
 
 @tailwind utilities;

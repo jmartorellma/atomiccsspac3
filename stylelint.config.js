@@ -15,6 +15,7 @@ module.exports = {
           "ignoreAtRules": [
             "apply",
             "at-root",
+            "layer",
             "include",
             "mixin",
             "responsive",

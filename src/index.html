@@ -1,43 +1,205 @@
 <!DOCTYPE html>
-
-<html>
+<html class="h-full text-base overflow-hidden">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jordi Martorell Masip">
+    <meta name="description" content="PAC 3 - Eines HTML i CSS II"/>
+    <title>Delta Music Festival - Bandes</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
   </head>
-  <body>
-    <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-
-    <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
-      <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="./assets/images/sarah-dayan.jpg" alt="" width="384" height="512">
-      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-        <blockquote>
-          <p class="text-lg font-semibold">
-            “Tailwind CSS is the only framework that I've seen scale
-            on large teams. It’s easy to customize, adapts to any design,
-            and the build size is tiny.”
-          </p>
-        </blockquote>
-        <figcaption class="font-medium">
-          <div class="text-cyan-600">
-            Sarah Dayan
+  <body class="h-full font-sans m-0 box-border" onresize="onresize()">
+    <header class="bg-dark h-14">
+      <div class="main-mx-w m-auto p-r-per-5 p-l-per-5">
+        <nav class="relative flex flex-wrap items-center justify-between py-2 px-4 lg:flex-row lg:flex-nowrap justify-start bg-dark">
+          <a class="flex m-0 items-center justify-around py-1 text-lg whitespace-nowrap no-underline bg-transparent" href="#">
+            <img class= "w-7 h-7 mr-1" src="./assets/images/logo.png">
+            <span class="font-bold text-logo">DMF</span>
+          </a>
+          <button class="btn-burguer" type="button" onclick="toogleMenu()">
+            <span class="burguer-icon burguer-icon-content inline-block w-7 h-7 align-middle bg-center bg-no-repeat"></span>
+          </button>
+        
+          <div class="w-full flex-grow items-center hidden justify-end lg:flex lg:w-auto" id="menuContainer">
+            <ul class="flex flex-grow flex-col pl-0 mb-0 list-none lg:flex-row lg:flex-grow-0">
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2" href="#">Bandes</a>
+              </li>
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2" href="information.html">Informació</a>
+              </li>
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2" href="#">Galeria</a>
+              </li>
+            </ul>
           </div>
-          <div class="text-gray-500">
-            Staff Engineer, Algolia
+        </nav>
+      </div>      
+    </header>
+    <main class="main-flex">      
+      <div class="container-main">
+        <header class="main-header">
+          <h1 class="main-header__titol">BANDES</h1>
+        </header>
+        <section class="container-wrap">
+          <!--The Killers-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="https://www.thekillersmusic.com" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/the-killers.jpg"  alt="The Killers">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">The Killers</h5>
+              <h6 class="custom-card-body__style">Indie Rock</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Banda d' Indie Rock d'<abbr title="Estats Units">EEUU</abbr> formada el 2001 a Las Vegas (Nevada) formada per Brandon Flowers, Mark Stoermer i Ronnie Vannucci.</p>
+                <p class="card-text custom-card-body__data"><time>23 de juliol a les 20:00h</time></p>
+              </div>
+            </div>
           </div>
-        </figcaption>
-      </div>
-    </figure>
-
+          <!--Els Catarres-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="http://http://www.elscatarres.cat/" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/els-catarres.jpg"  alt="Els Catarres">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">Els Catarres</h5>
+              <h6 class="custom-card-body__style">Pop-folk</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Els Catarres són un grup de música català d'estil pop-folk compost per Èric Vergés i Jan Riera, d'Aiguafreda, i Roser Cruells, de Centelles.</p>
+                <p class="card-text custom-card-body__data"><time>23 de juliol a les 22:00h</time></p>
+              </div>
+            </div>
+          </div>
+          <!--Marea-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="https://losmarea.com/" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/marea.jfif"  alt="Marea">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">Marea</h5>
+              <h6 class="custom-card-body__style">Rock</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Marea es una banda de música rock (original de Berriozar, Navarra) formada el 1997 per Kutxi Romero, amb talls enèrgics de rock dur i lletres poètiques.</p>
+                <p class="card-text custom-card-body__data"><time>24 de juliol a les 00:00h</time></p>
+              </div>
+            </div>
+          </div>
+          <!--Buhos-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="https://www.buhosrock.com/es/" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/buhos.jpg"  alt="Buhos">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">Buhos</h5>
+              <h6 class="custom-card-body__style">Rock festiu</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Buhos és un grup de rock festiu, amb influències del reggae i l'ska i en constant evolució musical, fundat a Calafell al Baix Penedès l'any 2005.</p>
+                <p class="card-text custom-card-body__data"><time>24 de juliol a les 20:00h</time></p>
+              </div>
+            </div>
+          </div>
+          <!--Franz Ferdinard-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="https://franzferdinand.com/" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/franz-ferdinand.jpg"  alt="Franz Ferdinard">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">Franz Ferdinard</h5>
+              <h6 class="custom-card-body__style">Indie</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Franz Ferdinand és un grup de música indie format a Glasgow (Escòcia) el 2002, carregada d'influències del punk i l'art-rock.</p>
+                <p class="card-text custom-card-body__data"><time>24 de juliol a les 22:00h</time></p>
+              </div>
+            </div>
+          </div>
+          <!--Els Pets-->
+          <div class="card custom-card">
+            <a class="custom-card-img" href="http://www.elspets.cat/" target="_blank">
+              <figure class="custom-card-img__figure">
+                <img class="card-img-top custom-card-img__img" src="./assets/images/bands/els-pets.jpg"  alt="Els Pets">
+              </figure>              
+            </a>
+            <div class="card-body custom-card-body">
+              <h5 class="card-title custom-card-body__title">Els Pets</h5>
+              <h6 class="custom-card-body__style">Pop Rock Català</h6>
+              <div class="custom-card-body__p">
+                <p class="card-text custom-card-body__text">Els Pets és un grup de rock català i pop rock, liderat per Lluís Gavaldà, originari del poble de Constantí (Tarragonès).</p>
+                <p class="card-text custom-card-body__data"><time>25 de juliol a les 00:00h</time></p>
+              </div>
+            </div>
+          </div>
+          <footer class="main-mx-w m-auto p-r-per-5 p-l-per-5 peu-pagina-interior">
+            <div class="peu-pagina-interior__text">UN ANY MÉS, TORNA EL TEU FESTIVAL DE MÚSICA AL DELTA DE L'EBRE - ETRADES DISPONIBLES A TRAVÉS DE <a href="https://www.ticketmaster.es/" target="_blank">TICKET MASTER</a>.</div>
+          </footer>
+        </section>
+      </div>      
+    </main>
+    <footer class="bg-dark h-14">
+      <div class="main-mx-w m-auto p-r-per-5 p-l-per-5">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+          <a class="navbar-brand d-none d-sm-block logo" href="#">
+            <img class= "logo__image" src="./assets/images/logo.png">
+            <span class="logo__text">DMF</span>
+          </a>        
+          <div class="d-flex flex-row flex-md-row flex-sm-row flex-grow-1">
+            <ul class="navbar-nav d-flex justify-content-around flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Bandes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="information.html">Informació</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex flex-row">
+            <a class="navbar-brand logo social" href="#">
+              <i class="fab fa-google-plus-g"></i>
+            </a>  
+            <a class="navbar-brand logo social" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>  
+            <a class="navbar-brand logo social" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>  
+          </div>          
+        </nav>
+      </div>      
+    </footer>
+    <script type="text/javascript">	
+      function toogleMenu() {
+        const x = document.getElementById("menuContainer");
+        if (x.style.display === "none" || x.style.display === undefined || x.style.display === null || x.style.display === "") {
+          x.style.display = "flex";
+        } else {
+          x.style.display = "none";
+        }
+      };
+      function onresize() {
+        const x = document.getElementById("menuContainer");
+        if (window.outerWidth > 1023 && x.style.display === "none") {
+          x.style.display = "flex";
+        }
+        else {
+          x.style.display == "none";
+        }
+      };
+    </script>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
