@@ -34,17 +34,22 @@ abbr {
 //   }
 // }
 
-.social {
-  margin-left: 15px;
+.text-size-1-25-rem {
+  font-size: 1.25rem;
 }
+
 
 /* stylelint-disable number-leading-zero, max-line-length */
 .nav-text-color {
-  color: hsla(0, 0%, 100%, .75);
+  color: hsla(0, 0%, 100%, .5);
 }
 
 .nav-text-color-hov {
   color: hsla(0, 0%, 100%, .75);
+}
+
+.active-nav {
+  color: white;
 }
 
 .burguer-color {
@@ -62,7 +67,6 @@ abbr {
 .burguer-icon-content {
   content: "";
 }
-
 
 @layer components {
   .btn-burguer {

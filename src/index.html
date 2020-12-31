@@ -26,7 +26,7 @@
           <div class="w-full flex-grow items-center hidden justify-end lg:flex lg:w-auto" id="menuContainer">
             <ul class="flex flex-grow flex-col pl-0 mb-0 list-none lg:flex-row lg:flex-grow-0">
               <li class="h-10 flex items-center">
-                <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2" href="#">Bandes</a>
+                <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2 active-nav" href="#">Bandes</a>
               </li>
               <li class="h-10 flex items-center">
                 <a class="nav-text-color hover:nav-text-color-hov py-2 lg:px-2" href="information.html">Informació</a>
@@ -149,32 +149,32 @@
     </main>
     <footer class="bg-dark h-14">
       <div class="main-mx-w m-auto p-r-per-5 p-l-per-5">
-        <nav class="navbar navbar-expand navbar-dark bg-dark">
-          <a class="navbar-brand d-none d-sm-block logo" href="#">
-            <img class= "logo__image" src="./assets/images/logo.png">
-            <span class="logo__text">DMF</span>
-          </a>        
-          <div class="d-flex flex-row flex-md-row flex-sm-row flex-grow-1">
-            <ul class="navbar-nav d-flex justify-content-around flex-grow-1">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Bandes</a>
+        <nav class="relative flex flex-wrap items-center justify-between py-2 px-4 lg:flex-row lg:flex-nowrap justify-start bg-dark">
+          <a class="hidden sm:flex m-0 items-center justify-around py-1 text-lg whitespace-nowrap no-underline bg-transparent" href="#">
+            <img class= "w-7 h-7 mr-1" src="./assets/images/logo.png">
+            <span class="font-bold text-logo">DMF</span>
+          </a>       
+          <div class="flex w-auto flex-grow items-center">
+            <ul class="flex flex-grow flex-row justify-around pl-0 mb-0 list-none">
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov text-sm sm:text-base py-2 lg:px-2 active-nav" href="#">Bandes</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="information.html">Informació</a>
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov text-sm sm:text-base py-2 lg:px-2" href="information.html">Informació</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Galeria</a>
+              <li class="h-10 flex items-center">
+                <a class="nav-text-color hover:nav-text-color-hov text-sm sm:text-base py-2 lg:px-2" href="#">Galeria</a>
               </li>
-            </ul>
+            </ul>            
           </div>
-          <div class="d-flex flex-row">
-            <a class="navbar-brand logo social" href="#">
+          <div class="flex flex-row">
+            <a class="flex items-center justify-around mt-0 mr-0 mb-0 ml-3.5 py-1.5 text-xl leading-5 text-white" href="#">
               <i class="fab fa-google-plus-g"></i>
             </a>  
-            <a class="navbar-brand logo social" href="#">
+            <a class="flex items-center justify-around mt-0 mr-0 mb-0 ml-3.5 py-1.5 text-xl leading-5 text-white" href="#">
               <i class="fab fa-facebook-f"></i>
             </a>  
-            <a class="navbar-brand logo social" href="#">
+            <a class="flex items-center justify-around mt-0 mr-0 mb-0 ml-3.5 py-1.5 text-xl leading-5 text-white" href="#">
               <i class="fab fa-twitter"></i>
             </a>  
           </div>          
