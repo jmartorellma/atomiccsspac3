@@ -1,5 +1,8 @@
 @use "sass:color";
 
+$imatge-main-fons: '../images/fons-delta.jpg';
+
+
 $font-family-sans-serif: "Open sans", sans-serif; //font-sans
 $font-family-serif: "Playfair Display", serif; //font-serif
 
@@ -14,8 +17,8 @@ $font-size-titol-medium: 4rem;
 $font-size-titol-large: 6rem;
 $card-text-size: 0.9rem;
 
-$main-height: calc(100% - 112px);
-$imatge-main-fons: '../images/fons-delta.jpg';
+$main-height: calc(100% - 112px); //fet
+
 
 $imatge-portada-fons: '../images/portada-guitarra.jpg';
 $imatge-portada-esquerra:'../images/portada-grup.jpg';

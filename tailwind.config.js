@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         cyan: colors.cyan,
-        dark: '#343a40'
+        dark: '#343a40',
+        primary: '#0f2e4e'
       },
       textColor: {
         'logo': '#ff0000'
