@@ -1,43 +1,4 @@
 @use "sass:color";
 
 $imatge-main-fons: '../images/fons-delta.jpg';
-
-
-$font-family-sans-serif: "Open sans", sans-serif; //font-sans
-$font-family-serif: "Playfair Display", serif; //font-serif
-
-$base-font-size: 16px; //text-base
-
-$font-size-destacat: 1.3rem;
-$line-height-destacat: 1.1;
-$font-size-destacat-small: 0.8rem;
-$font-size-destacat-extra-large: 2rem;
-$font-size-titol-small: 2.5rem;
-$font-size-titol-medium: 4rem;
-$font-size-titol-large: 6rem;
-$card-text-size: 0.9rem;
-
-$main-height: calc(100% - 112px); //fet
-
-
-$imatge-portada-fons: '../images/portada-guitarra.jpg';
-$imatge-portada-esquerra:'../images/portada-grup.jpg';
-$imatge-portada-dreta: '../images/portada-escenari.jpg';
 $imatge-information-head: '../images/imformation-head.jpg';
-
-$color-primary: #0f2e4e;
-$color-secondary: green;
-$color-brown: #ea8c48;
-$color-text-logo:#f00;
-$color-footer:  #6b0000;
-
-
-//Custom Bootstrap
-
-$card-border-width: 2px;
-$card-border-radius: 5px;
-$card-border-color: $color-primary;
-$theme-colors: (
-  "primary": $color-primary,
-  "secondary": $color-secondary
-);

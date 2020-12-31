@@ -22,22 +22,9 @@ abbr {
   padding-left: 5%;
 }
 
-.peu-pagina-interior__text {
-  font-weight: bold;
-  color: $color-footer;
-  text-align: center;
-}
-
-// .link-footer {
-//   @include small {
-//     font-size: 0.8rem;
-//   }
-// }
-
 .text-size-1-25-rem {
   font-size: 1.25rem;
 }
-
 
 /* stylelint-disable number-leading-zero, max-line-length */
 .nav-text-color {
@@ -71,6 +58,14 @@ abbr {
 @layer components {
   .btn-burguer {
     @apply burguer-color lg:hidden py-1 px-3 text-lg bg-transparent border border-solid burguer-border-color rounded;
+  }
+
+  .logo {
+    @apply flex m-0 items-center justify-around py-1 text-lg whitespace-nowrap no-underline bg-transparent;
+  }
+
+  .fab-btn {
+    @apply flex items-center justify-around mt-0 mr-0 mb-0 ml-3.5 py-1.5 text-xl leading-5 text-white;
   }
   /* stylelint-enable number-leading-zero, max-line-length */
 }

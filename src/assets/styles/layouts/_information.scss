@@ -1,129 +1,23 @@
-html {
-  height: 100%;
-  font-size: $base-font-size;
-  overflow: hidden;
+.min-h-224p {
+  min-height: 224px;
 }
 
-body {
-  height: 100%;
-  font-family: $font-family-sans-serif;
-  margin: 0;
-  box-sizing: border-box;
+.min-h-320p {
+  min-height: 320px;
 }
 
-abbr {
-  text-decoration: none !important;
+.info-bg {
+  background: url($imatge-information-head);
 }
 
-nav {
-  z-index: 1;
+.info-mx-w {
+  max-width: 900px;
 }
 
-.logo {
-  display: flex;
-  margin: 0;
-  align-items: center;
-  justify-content: space-around;
+.p-inline-start {
+  padding-inline-start: 40px;
 }
 
-.logo__image {
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
-
-.logo__text {
-  font-weight: bold;
-  color: $color-text-logo;
-}
-
-.main-navbar {
-  height: 56px;
-  background-color: var(--dark);
-}
-
-main {
-  height: $main-height;
-  background: url($imatge-main-fons);
-  background-size: cover;
-  overflow-y: auto;
-}
-
-.main-flex {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-}
-
-.container-main {
-  display: flex;
-  flex-grow: 1;
-  width: 100%;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-.lateral-container {
-  max-width: 1800px;
-  margin: auto;
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.main-header__titol {
-  font-size: $font-size-titol-medium;
-  font-family: $font-family-serif;
-  color: $color-primary;
-
-  // @include small {
-  //   font-size: $font-size-titol-small;
-  // }
-
-  // @include extra-large {
-  //   font-size: $font-size-titol-large;
-  // }
-}
-
-.container-wrap {
-  display: flex;
-  padding-top: 3rem;
-  padding-right: 5%;
-  padding-bottom: 3rem;
-  padding-left: 5%;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.peu-pagina-interior {
-  position: relative;
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.peu-pagina-interior__text {
-  font-weight: bold;
-  color: $color-footer;
-  text-align: center;
-}
-
-// .link-footer {
-//   @include small {
-//     font-size: 0.8rem;
-//   }
-// }
-
-.social {
-  margin-left: 15px;
+li::marker {
+  font-size: 2rem;
 }
